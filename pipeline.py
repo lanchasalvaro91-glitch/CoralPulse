@@ -23,7 +23,7 @@ def main():
     # 3. Subimos a Comet (si hay clave)
     if COMET_API_KEY:
         experiment = {"apiKey": COMET_API_KEY, "projectName": PROJECT_NAME, "metrics": logger.generar_reporte()}
-        requests.post("https://api.comet.ml/api/rest/v1/write", json=experiment)
+        requests.post("https://www.comet.com/api/rest/v1/write", json=experiment)
         print("✅ Métricas enviadas a Comet")
 
 if __name__ == "__main__":
