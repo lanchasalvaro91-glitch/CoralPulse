@@ -23,8 +23,13 @@ def main():
     # 3. Subimos a Comet (si hay clave)
     if COMET_API_KEY:
         experiment = {"apiKey": COMET_API_KEY, "projectName": PROJECT_NAME, "metrics": logger.generar_reporte()}
-        requests.post("https://www.comet.com/api/rest/v1/write", json=experiment)
-        print("✅ Métricas enviadas a Comet")
+        response = requests.post("https://www.comet.com/api/rest/v1/write", json=experiment)
+        if response.status_code == 200:
+            print("✅ Métricas enviadas a Comet")
+        else:
+            print(f"Error al enviar datos a Comet: {response.status_code}")
+    else:
+        print("No hay clave de API de Comet")
 
 if __name__ == "__main__":
     main()
