@@ -1,0 +1,5 @@
+{"id": "pc001", "text": "Necesitamos finalizar la propuesta en las próximas dos horas. No hay tiempo para rondas de revisión o disenso.", "label": 1, "patron": "Dictadura de la Urgencia"}
+{"id": "pc002", "text": "La herramienta es neutral; no tiene sesgos porque simplemente cuenta votos.", "label": 1, "patron": "Mito de la Neutralidad"}
+{"id": "pc003", "text": "Votemos rápido, ya llevamos 2 horas y todos estamos cansados.", "label": 1, "patron": "Consenso por Exhaustión"}
+{"id": "pc004", "text": "Incorporaremos rondas de reformulación explícita para validar comprensión mutua.", "label": 0, "patron": "Sano"}
+{"id": "pc005", "text": "Dedicaremos 48 h a revisión por pares y documentaremos hipótesis no seleccionadas.", "label": 0, "patron": "Sano"}
